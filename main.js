@@ -1,10 +1,10 @@
-function decimalPlaceCounter(stringNumber){
-  var counter = 0;
-  for (var i = 0; i < stringNumber.length; i++) {
-    counter += 1
-    if (stringNumber[i] === ".") {
-      return counter - 1
-    }
+function getWordCount(sentence) {
+  var counter = 0
+  for(var i = 0; i < sentence.length; i++) {
+  if(sentence[i] === " ") {
+    counter += 1;
+
   }
-  return 0
-}
+ }
+  return counter + 1
+
