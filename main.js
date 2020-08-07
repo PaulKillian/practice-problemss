@@ -1,4 +1,3 @@
-
 function getWordCount(sentence) {
   var counter = 0
   for(var i = 0; i < sentence.length; i++) {
@@ -8,4 +7,4 @@ function getWordCount(sentence) {
   }
  }
   return counter + 1
-}
+
