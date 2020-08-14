@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+		function payscaleAnalyzer(payList) {
+			let num = 0
+			let num1 = 0
+			for(var i = 0; i < payList.length; i++) {
+				if(payList[i] > num) {
+					num = payList[i]
+					if (payList[i] === payList[0]) {
+						num1 = payList[i]
+					}
+				} else if (payList[i] < num1){
+					num1 = payList[i]
+				}
+			}
+		  return num - num1
+		}
+	</script>
+</body>
+</html>
